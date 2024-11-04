@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        );
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins';
+        }
+
+        body {
+            background-color: #f6ece3;
+        }
+
+        .formContainer {
+            position: absolute;
+            max-width: 450px;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            background-color: rgb(255, 255, 255);
+            padding: 40px;
+            border: 3px solid black;
+        }
+
+        .signUpForm {
+            display: none;
+        }
+
+        .formContainer h2 {
+            font-size: 22px;
+            color: #000000;
+            text-align: center;
+        }
+
+        .formContainer.active .signUpForm {
+            display: block;
+        }
+
+        .formContainer.active .logInForm {
+            display: none;
+        }
+
+        .inputBox {
+            position: relative;
+            margin-top: 25px;
+            width: 100%;
+            height: 40px;
+        }
+
+        .inputBox input {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 0 40px;
+        }
+
+        .inputBox i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .inputBox i.username,
+        .inputBox i.email,
+        .inputBox i.password {
+            left: 13px; 
+        }
+
+        .inputBox i.pw_hide {
+            right: 13px;
+            font-size: 18px;
+        }
+
+        .option {
+            margin-top: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        .formContainer a {
+            text-decoration: none;
+            color: #91766e;
+            font-size: 12px;
+        }
+
+        .formContainer a:hover {
+            text-decoration: underline;
+        }
+
+        .rememberMe {
+            display: flex;
+            column-gap: 8px;
+            white-space: nowrap;
+            font-size: 12px;
+        }
+
+        .formContainer .button {
+            background: #b7a7a9;
+            color: white;
+            margin-top: 25px;
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 25px;
+            border: none;
+        }
+
+        .logInToSignUp {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 15px;
+        }
